@@ -13,14 +13,79 @@
 //   .then(console.log)
 //   .catch(console.error);
 //
+import pokemon from "../data/pokemon/pokemon.js";
 
 const App = () => {
-  const el = document.createElement('div');
+  const mostrarGameBoard = document.createElement("div");
+  mostrarGameBoard.className = "listaDePokemones";
 
-  el.className = 'App';
-  el.textContent = 'Hola mundo!';
+  let lista = recortarLista(pokemon.items, 3);
+  
+  shuffle(lista);
 
-  return el;
+  for (let i = 0; i < lista.length; i++) {
+    //const element = lista[i];
+
+    let card = document.createElement("div");
+    card.className = "card";
+    let imageFront = document.createElement("img");
+    imageFront.id = i;
+    imageFront.src = "ImageFront1.png";
+    imageFront.classname = "cardFrontImage";
+    card.appendChild(imageFront);
+
+    let imagenBack = document.createElement('img');
+    imagenBack.id = i;
+    let cardId = imagenBack.id;
+    imagenBack.className = "card-back-img";
+    //cardsChosenId.push(cardId);
+    imagenBack.setAttribute("src", lista[cardId].image);
+    card.appendChild(imagenBack);
+
+    card.addEventListener("click", ()=> {
+
+      
+      
+      card.classList.toggle('is-flipped');
+      
+    
+    });
+        
+
+    //mostrarGameBoard.innerHTML += `<img onclick = "flipCard(element)" src ="${element.image}"></img>`;
+  mostrarGameBoard.appendChild(card)
+
+  }
+  
+  //cuando busco algo dentro de un objeto se utiliza . dice que items está dentro del objeto pokemon
+
+  return mostrarGameBoard;
 };
+//function flipCard(element) {
+  //flip card es la funcion para dar vuelta la carta pero aun no la utilizamos
+  //console.log(element);
+//}
+function recortarLista(lista) {
+  const listaRecortada = [];
+  for (let index = 0; index < 3; index++) {
+    const element = lista[index];
+    listaRecortada.push(element, element); //aquí se duplica un elemento de la lista, hasta llegar al index 3 (los tres primeros elemento
+  }
+  return listaRecortada;
+}
+const shuffle = (arr) =>{
+    for(var i =arr.length-1 ; i>0 ;i--){
+        var j = Math.floor( Math.random() * (i + 1) );
+        [arr[i],arr[j]]=[arr[j],arr[i]];
+    }
+    //return arr;    
+
+  }
+/*let im =  shuffle;
+
+
+
+  )
+}*/
 
 export default App;

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.pag1{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.logo {
+    max-height: 65px;
+    padding: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #020202;  
+    font-family: "open sans"; 
+    align-items: center; 
+    box-shadow: #a7b6c6;
+}
+
+menu {
+    display: flex;
+    color: ivory;
+    list-style-type:none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    font-family: "open sans"; 
+    font-size: 18px;
+    padding: 30px;
+}
+
+li { 
+    display:flex;
+    padding-left: 15px;
+    color: aliceblue;
+    list-style-type: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+main{
+    background-image: url(lugia.jpg);
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    flex-wrap: wrap;
+    font-size: 60px;
+    font-family: 'Fredoka One';
+    font-weight: bold;
+    color: ivory;
+    text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+    padding: 5%;
+    padding-top: 10%;
+    padding-right: 25px;
+    text-align: right;
+    letter-spacing: 2pt;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.botonComprar{
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background: #FF5376;
+    border-radius: 30px;
+    font-size: 23px;
+    font: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+    color: ivory;
+    box-shadow: 0 1rem 1.25rem 0 rgb(22 75 195 / 50%), 0 -0.25rem 1.5rem rgb(110 15 155) inset, 0 0.75rem 0.5rem rgb(255 255 255 / 40%) inset, 0 0.25rem 0.5rem 0 rgb(180 70 207) inset;
+    border: 1px solid #2b609a;
+    appearance: auto;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 8%;
+}  
+
+ .button:hover{
+    background:rgba(110, 15, 155, 1);
+}
+
+.background{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+    background-position-x: right;
+}
+
+ .card{
+    display: flex;
+    background: #F4F6F7;
+    margin: 30px;
+    width: 120px;
+    height: 140px;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 #0c0d0dbd;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.cardFrontImage {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: block;
+    background-repeat: no-repeat;
+    background-size:130px;
+    margin-top: -30px;
+    padding-top: 35px;
+    margin-left: -10px;
+}
+
+.card-back-img{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    display: block;
+    background-size:100px;
+    margin-top: -105px;
+    margin-right: 100px;
+    margin-left: -20px;
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+}
+.listaDePokemones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
