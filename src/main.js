@@ -7,6 +7,17 @@ document.getElementById("pag2").style.display = "none";
 document.getElementById("pag1").style.display = "flex";
 }
 
+document.getElementById("juegaAqui").onclick=function(){
 
+        document.getElementById("pagFinal").style.display = "flex";               
+        document.getElementById("pag2").style.display = "none";
+}
+                
 document.getElementById('root').appendChild(App());
+
+export default main;
+
+
+
+
 
