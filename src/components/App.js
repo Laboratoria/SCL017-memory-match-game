@@ -20,16 +20,33 @@ const App = () => {
   mostrarGameBoard.className = "listaDePokemones";
 
   let lista = recortarLista(pokemon.items, 3);
-  
   shuffle(lista);
+  let cartasEscogidas = [];
+
+  function flipCard(target) {
+    cartasEscogidas.push(target);
+    if(cartasEscogidas.length === 2) {
+      setTimeout(match, 1000);
+    }
+    console.log(target);
+    console.log(cartasEscogidas)
+  }
+  
+  function match () {
+    if(cartasEscogidas[0] === cartasEscogidas[1]) {
+      alert('hiciste match');
+    } else {
+      alert('te equivocaste');
+      cartasEscogidas.length = 0;
+    }
+  }
 
   for (let i = 0; i < lista.length; i++) {
-    //const element = lista[i];
-
+  
     let card = document.createElement("div");
     card.className = "card";
     let imageFront = document.createElement("img");
-    imageFront.id = i;
+    imageFront.id = i+"";
     imageFront.src = "ImageFront1.png";
     imageFront.classname = "cardFrontImage";
     card.appendChild(imageFront);
@@ -38,33 +55,19 @@ const App = () => {
     imagenBack.id = i;
     let cardId = imagenBack.id;
     imagenBack.className = "card-back-img";
-    //cardsChosenId.push(cardId);
+    
     imagenBack.setAttribute("src", lista[cardId].image);
     card.appendChild(imagenBack);
 
-    card.addEventListener("click", ()=> {
-
-      
-      
+    card.addEventListener("click", (event)=> {
       card.classList.toggle('is-flipped');
-      
-    
-    });
-        
-
-    //mostrarGameBoard.innerHTML += `<img onclick = "flipCard(element)" src ="${element.image}"></img>`;
+      flipCard(event.target);
+    });        
   mostrarGameBoard.appendChild(card)
-
   }
-  
-  //cuando busco algo dentro de un objeto se utiliza . dice que items está dentro del objeto pokemon
-
   return mostrarGameBoard;
 };
-//function flipCard(element) {
-  //flip card es la funcion para dar vuelta la carta pero aun no la utilizamos
-  //console.log(element);
-//}
+
 function recortarLista(lista) {
   const listaRecortada = [];
   for (let index = 0; index < 3; index++) {

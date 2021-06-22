@@ -46,7 +46,7 @@ li {
     padding-inline-start: 40px;
 }
 
-main{
+/* main{
     background-image: url(lugia.jpg);
     display: flex;
     background-repeat: no-repeat;
@@ -68,7 +68,7 @@ main{
     flex-direction: column;
     align-content: flex-end;
     align-items: flex-end;
-}
+} */
 
 .botonComprar{
     cursor: pointer;
