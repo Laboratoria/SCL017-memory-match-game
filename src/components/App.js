@@ -65,7 +65,7 @@ const App = () => {
     });        
   mostrarGameBoard.appendChild(card)
   }
-  return mostrarGameBoard;
+  // return mostrarGameBoard;
 };
 
 function recortarLista(lista) {
