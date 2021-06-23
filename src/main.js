@@ -15,7 +15,7 @@ document.getElementById("juegaAqui").onclick=function(){
                 
 document.getElementById('root').appendChild(App());
 
-export default main;
+
 
 
 

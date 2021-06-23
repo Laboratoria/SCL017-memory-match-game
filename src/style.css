@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-.pag1{
+.contenedorPrincipal{
     flex-wrap: wrap;
     flex-direction: column;
+    background-image: url(lugia.jpg);
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    
 }
 
 .logo {
@@ -46,15 +54,9 @@ li {
     padding-inline-start: 40px;
 }
 
-/* main{
-    background-image: url(lugia.jpg);
-    display: flex;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 70vh;
-    flex-wrap: wrap;
+main{
+    
+   
     font-size: 60px;
     font-family: 'Fredoka One';
     font-weight: bold;
@@ -68,7 +70,7 @@ li {
     flex-direction: column;
     align-content: flex-end;
     align-items: flex-end;
-} */
+}
 
 .botonComprar{
     cursor: pointer;
@@ -102,7 +104,7 @@ li {
     background-attachment: fixed;
     margin: 0px;
     background-position-x: right;
-}
+} */
 
  .card{
     display: flex;
