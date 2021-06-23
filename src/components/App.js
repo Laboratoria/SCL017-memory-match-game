@@ -16,6 +16,8 @@
 
 
 import pokemon from "../data/pokemon/pokemon.js";
+console.log(pokemon);
+
 
 const App = () => {
   const gameBoard = document.createElement("div"); //Aquí creamos el contenedor padre que anexa a todos los contenedores hijos
@@ -32,52 +34,6 @@ const App = () => {
   level1.id = ("nivel1");
 
   const memoryGame = document.createElement("div"); 
-  
-  
-// //   shuffle(lista);
-// //   let cartasEscogidas = [];
-
-// //   function flipCard(target) {
-// //     cartasEscogidas.push(target);
-// //     if(cartasEscogidas.length === 2) {
-// //       setTimeout(match, 1000);
-// //     }
-// //     console.log(target);
-// //     console.log(cartasEscogidas)
-// //   }
-  
-// //   function match () {
-// //     if(cartasEscogidas[0] === cartasEscogidas[1]) {
-// //       alert('hiciste match');
-// //     } else {
-// //       alert('te equivocaste');
-// //       cartasEscogidas.length = 0;
-// //     }
-// //   }
-
-// //   for (let i = 0; i < lista.length; i++) {
-  
-// //     let card = document.createElement("div");
-// //     card.className = "card";
-// //     let imageFront = document.createElement("img");
-// //     imageFront.id = i+"";
-// //     imageFront.src = "ImageFront1.png";
-// //     imageFront.classname = "cardFrontImage";
-// //     card.appendChild(imageFront);
-
-// //     let imagenBack = document.createElement('img');
-// //     imagenBack.id = i;
-// //     let cardId = imagenBack.id;
-// //     imagenBack.className = "card-back-img";
-    
-// //     imagenBack.setAttribute("src", lista[cardId].image);
-// //     card.appendChild(imagenBack);
-
-// //     card.addEventListener("click", (event)=> {
-// //       card.classList.toggle('is-flipped');
-// //       flipCard(event.target);
-// //     });        
-
   
 
 // Aquí anexamos todos los contenedores padres a sus respectivos contenedores hijos
