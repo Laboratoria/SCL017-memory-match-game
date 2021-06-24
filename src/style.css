@@ -317,3 +317,12 @@ margin: 10px;
     color:#fff;
     padding: 20px;
  }
+ .nextLevelText{
+    display:flex;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color:rgb(227, 238, 6);
+    padding: 5px;
+ }

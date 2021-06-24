@@ -23,6 +23,7 @@ const App = () => {
   const gameBoard = document.createElement("div"); //Aquí creamos el contenedor padre que anexa a todos los contenedores hijos
   gameBoard.className = ("contenedor"); // Le damos un class al contenedor para darle estilo con CSS
   gameBoard.id = ("gameBoard");// y le damos un id para poder tener el nombre del contenedor
+  gameBoard.style.display = ("none");
 
   const gameContainer = document.createElement("div"); // Aquí creamos el elemento que va a contener el juego y que será hijo del elemento anterior
   gameContainer.className = ("containerBox1");
@@ -34,6 +35,14 @@ const App = () => {
   level1.id = ("nivel1");
 
   const memoryGame = document.createElement("div"); 
+  memoryGame.className = ("memoryGame");
+  memoryGame.id = ("memoryGame");
+
+  const nextLevel = document.createElement("div");
+  nextLevel.style.display = ("none");
+  const textNextLevel = document.createTextNode ("¡LO LOGRASTE!")
+  nextLevel.className = ("nextLevelText");
+
   
 
 // Aquí anexamos todos los contenedores padres a sus respectivos contenedores hijos
@@ -41,6 +50,8 @@ const App = () => {
   gameContainer.appendChild(level1);
   level1.appendChild(textLevel1);
   gameContainer.appendChild(memoryGame);
+  gameContainer.appendChild(nextLevel);
+  nextLevel.appendChild(textNextLevel);
 
 
   return gameBoard;
