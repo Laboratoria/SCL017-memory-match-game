@@ -37,6 +37,7 @@ const App = () => {
   const memoryGame = document.createElement("div"); 
   memoryGame.className = ("memoryGame");
   memoryGame.id = ("memoryGame");
+  
 
   const nextLevel = document.createElement("div");
   nextLevel.style.display = ("none");
