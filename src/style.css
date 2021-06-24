@@ -233,17 +233,15 @@ main{
 .card.is-flipped {
     transform: rotateY(180deg);
 }
+.card.is-flipped img{
+    display: none;
+}
 .listaDePokemones {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
-
-
-
-
-
 
 
 
@@ -409,12 +407,6 @@ margin: 10px;
     color:#fff;
     padding: 20px;
  }
- .nextLevelText{
-    display:flex;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    color:rgb(227, 238, 6);
-    padding: 5px;
+ .gameContainer{
+     display: grid;
  }
