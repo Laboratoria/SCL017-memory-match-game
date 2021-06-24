@@ -1,4 +1,6 @@
 import pokemon from "../data/pokemon/pokemon.js";
+console.log(pokemon);
+
 
 const App = () => {
   const gameBoard = document.createElement("div"); //Aquí creamos el contenedor padre que anexa a todos los contenedores hijos
@@ -20,6 +22,13 @@ const App = () => {
 
   const memoryGame = document.createElement("div"); 
 
+  memoryGame.className = ("memoryGame");
+  memoryGame.id = ("memoryGame");
+
+  const nextLevel = document.createElement("div");
+  nextLevel.style.display = ("none");
+  const textNextLevel = document.createTextNode ("¡LO LOGRASTE!")
+  nextLevel.className = ("nextLevelText");
 
   let listaPokemon = pokemon.items; // esto lo del for ya recorrido
   listaPokemon = shuffle(listaPokemon); // toma la lista y la barajea 
@@ -54,6 +63,8 @@ const App = () => {
   gameContainer.appendChild(level1);
   level1.appendChild(textLevel1);
   gameContainer.appendChild(memoryGame);
+  gameContainer.appendChild(nextLevel);
+  nextLevel.appendChild(textNextLevel);
 
 
   return gameBoard;

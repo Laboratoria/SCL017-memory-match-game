@@ -11,8 +11,8 @@ document.getElementById("pag1").style.display = "none";
 
 
 document.getElementById("juegaAqui").onclick=function(){
-    document.getElementById("gameBoard").style.display = "flex";               
- document.getElementById("pag2").style.display = "none";
+       document.getElementById("gameBoard").style.display = "flex";               
+    document.getElementById("pag2").style.display = "none";
 }
                 
 document.getElementById('root').appendChild(App());
