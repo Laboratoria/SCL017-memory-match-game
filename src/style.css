@@ -238,6 +238,9 @@ main{
 .card.is-flipped {
     transform: rotateY(180deg);
 }
+.card.is-flipped img{
+    display: none;
+}
 .listaDePokemones {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
