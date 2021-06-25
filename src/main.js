@@ -4,7 +4,7 @@ import App from './components/App.js';
 
 document.getElementById("botonComprar").onclick=function(){
 
-document.getElementById("gameBoard").style.display = "flex";
+document.getElementById("pag2").style.display = "flex";
 
 document.getElementById("pag1").style.display = "none";
 }

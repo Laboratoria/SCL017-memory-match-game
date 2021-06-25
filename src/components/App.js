@@ -39,22 +39,57 @@ const App = () => {
 
 // información declara en pokemones, se muestran en el contenedor
   for (let index = 0; index < listaPokemon.length; index++) {
-    const element = listaPokemon[index]; // representa a cada item actual en la lista de pokemon 
-     const tarjeta = document.createElement ("div"); // aqui se crea un div x para que contenga al pokemon 
-     tarjeta.className=("card") // estilo para css
-     const estaImagen = document.createElement("img"); // img es especial para imagenes  
-    estaImagen.id = index+element.id; 
-     estaImagen.src= element.image
+    const card = document.createElement ("div");
+    card.className = ("card");
+    card.id = ("card");
 
-    estaImagen.addEventListener("click", (event)=> {
-        tarjeta.classList.toggle('is-flipped');   
-        console.log (estaImagen)
-      }); 
+    const frente = document.createElement ("div");
+    frente.className = ("classFrente");
+    frente.id =("frente");
+
+    const atras = document.createElement ("div");
+    atras.className = ("classAtras");
+    atras.id = ("atras");
+    const imagenPokemon = document.createElement("img");
+    imagenPokemon.src = listaPokemon[index].image;
+    imagenPokemon.className =("imagenPokemon");
+
+    memoryGame.appendChild(card);
+    card.appendChild(imagenPokemon);
+    // frente.appendChild(atras);
+    // frente.appendChild(imagenPokemon);
+
+    imagenPokemon.addEventListener("click", ()=> {
+        card.classList.toggle('is-flipped');   
+      //  console.log (card)
+
+     }); 
+   
+    // const element = listaPokemon[index]; // representa a cada item actual en la lista de pokemon 
+    //  const card = document.createElement ("div"); // aqui se crea un div x para que contenga al pokemon 
+    //  card.className=("card") // estilo para css
+     
+    
+    //  //backCard.className = ("backCard");
+    //  const frontCard = document.createElement ("div");
+    //  frontCard.className = ("caraPrincipal");
+    //  const backCard = document.createElement ("div");
+    //  const pokemonImage = document.createElement("img"); // img es especial para imagenes  
+    // pokemonImage.id = index+element.id; 
+    //  pokemonImage.src= element.image
+
+    // pokemonImage.addEventListener("click", ()=> {
+    //     card.classList.toggle('is-flipped');   
+    //     console.log (pokemonImage)
+
+    // }); 
 
       
     // cartasEscogidas.push(element)  //se agrega las cartas escogidas al array --- corregir cartas que son o no pares
-    memoryGame.appendChild(tarjeta); 
-    tarjeta.appendChild(estaImagen)
+
+  //   memoryGame.appendChild(backCard);
+  //   memoryGame.appendChild(frontCard);
+  //   backCard.appendChild(pokemonImage);
     
   }
   
