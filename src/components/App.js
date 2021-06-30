@@ -1,4 +1,5 @@
 import pokemon from "../data/pokemon/pokemon.js"; 
+
 function recortarLista(lista) {// Solo se mostrarán 3 elementos del array de pokemones 
   const listaRecortada = [];
   for (let index = 0; index < 3; index++) {
