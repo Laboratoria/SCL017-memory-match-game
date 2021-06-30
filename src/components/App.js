@@ -1,4 +1,4 @@
-import pokemon from "../data/pokemon/pokemon.js";
+import pokemon from "../data/pokemon/pokemon.js"; 
 function recortarLista(lista) {// Solo se mostrarán 3 elementos del array de pokemones 
   const listaRecortada = [];
   for (let index = 0; index < 3; index++) {
@@ -25,7 +25,6 @@ const shuffle = (arr) =>{// Función para barajear las cartas
         [arr[i],arr[j]]=[arr[j],arr[i]];
     }
     return arr;    
- 
   }
 /* Creación de contenedores de juego */
 const gameBoard = document.createElement("div"); //Aquí creamos el contenedor padre que anexa a todos los contenedores hijos
@@ -103,8 +102,6 @@ const App = () => {
     }
     }); 
 
-    
- 
 // Aquí anexamos todos los contenedores padres a sus respectivos contenedores hijos
   gameBoard.appendChild(gameContainer);
   gameContainer.appendChild(level1);

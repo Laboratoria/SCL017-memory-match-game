@@ -61,7 +61,7 @@ nextLevel.addEventListener("click", ()=> {
 // funcionamiento del juego 
 let listaPokemon = pokemon.items; // esto lo del for ya recorrido
 listaPokemon = shuffle(listaPokemon); // toma la lista y la barajea 
-listaPokemon = recortarLista(listaPokemon, 6);// recorta esa lista a solo 3 item y los hace doble 
+listaPokemon = recortarLista(listaPokemon, 6);// recorta esa lista a solo 6 item y los hace doble 
 listaPokemon = shuffle(listaPokemon); // vuelve a barajear lo anterior.
 let cartasEscogidas = [];
 let cards = [];
