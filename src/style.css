@@ -1,6 +1,315 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+ 
+    /*página de juego */
+ 
+.memoryGame{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+ 
+ .card{
+    display: flex;
+    background: #FFFFFF;
+    border: 2px solid #017C76;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 11px 0px #48faf1;
+    border-radius: 10px;
+    margin: 30px;
+    width: 130px;
+    height: 150px;
+    padding: 15px;
+    /* transition: transform 0.8s;
+    transform-style: preserve-3d; */
+    cursor: pointer;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
 
+.cardEqual{
+    width: 130px;
+    height: 150px;
+
+}
+.imagenFrontal{
+    width: 50px;
+    height: 80px;    
+    display: block;
+}
+ 
+ 
+/* .card.is-flipped {
+    transform: rotateY(180deg);
+} */
+ 
+.imagenPokemon{
+    
+    /* transform: rotateY(180deg);  */
+    display: block;
+   
+}
+.containerBox1{
+    width: 960px;
+    height: 640px;
+    background: rgba(0, 0, 0, 0.44);
+    border: 5px solid #017C76;
+    box-sizing: border-box;
+    border-radius: 20px;  
+    text-align: center;
+    display: flex;
+    flex-direction: column;     
+    align-items: center; 
+    justify-content: flex-start;      
+}
+ 
+ .nivel1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    color:#fff;
+    padding: 20px;
+ }
+ 
+ .gameContainer{
+     display: grid;
+ }
+ 
+  /* disponible para iphone 6/7/8+ */
+ 
+  @media (max-width: 414px) and (max-height: 736px) {
+  .memoryGame{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+ 
+ .card{
+    display: flex;
+    background: #FFFFFF;
+    border: 2px solid #017C76;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 11px 0px #48faf1;
+    border-radius: 10px;
+    margin: 15px;
+    width: 110px;
+    height: 130px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+ 
+ 
+.card.is-flipped {
+    transform: rotateY(180deg);
+   
+}
+ 
+.imagenPokemon{
+    transform: rotateY(180deg);
+    display: block;
+    width: 90%;
+   
+}
+.containerBox1{
+    width: 100%;
+    height: 90%;
+    background: rgba(0, 0, 0, 0.44);
+    border: 5px solid #017C76;
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;     
+}
+ 
+ .nivel1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37px;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    margin-top: 20px;
+ }
+ .gameContainer{
+     display: grid;
+ }
+} 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+ 
+    /*página de juego */
+ 
+.memoryGame{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+ 
+ .card{
+    display: flex;
+    background: #FFFFFF;
+    border: 2px solid #017C76;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 11px 0px #48faf1;
+    border-radius: 10px;
+    margin: 30px;
+    width: 130px;
+    height: 150px;
+    padding: 15px;
+    /* transition: transform 0.8s;
+    transform-style: preserve-3d; */
+    cursor: pointer;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+ 
+.imagenFrontal{
+    width: 100px;
+    height: 120px;    
+    display: block;
+}
+ 
+ 
+/* .card.is-flipped {
+    transform: rotateY(180deg);
+} */
+ 
+.imagenPokemon{
+    
+    /* transform: rotateY(180deg);  */
+    display: block;
+   
+}
+.containerBox1{
+    width: 960px;
+    height: 640px;
+    background: rgba(0, 0, 0, 0.44);
+    border: 5px solid #017C76;
+    box-sizing: border-box;
+    border-radius: 20px;  
+    text-align: center;
+    display: flex;
+    flex-direction: column;     
+    align-items: center; 
+    justify-content: flex-start;      
+}
+ 
+ .nivel1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    color:#fff;
+    padding: 20px;
+ }
+ 
+ .gameContainer{
+     display: grid;
+ }
+ 
+  /* disponible para iphone 6/7/8+ */
+ 
+  @media (max-width: 414px) and (max-height: 736px) {
+  .memoryGame{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+ 
+ .card{
+    display: flex;
+    background: #FFFFFF;
+    border: 2px solid #017C76;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 11px 0px #48faf1;
+    border-radius: 10px;
+    margin: 15px;
+    width: 110px;
+    height: 130px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+ 
+ 
+.card.is-flipped {
+    transform: rotateY(180deg);
+   
+}
+ 
+.imagenPokemon{
+    transform: rotateY(180deg);
+    display: block;
+    width: 90%;
+   
+}
+.containerBox1{
+    width: 100%;
+    height: 90%;
+    background: rgba(0, 0, 0, 0.44);
+    border: 5px solid #017C76;
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;     
+}
+ 
+ .nivel1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37px;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    margin-top: 20px;
+ }
+ .gameContainer{
+     display: grid;
+ }
+} 
+ 
+ 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+ 
+/* página de inicio, secundaria*/
+body{
+    padding: 0px;
+    margin: 0px;
+}
+ 
 .contenedorPrincipal{
     flex-wrap: wrap;
     flex-direction: column;
@@ -13,7 +322,7 @@
     height: 100vh;
     
 }
-
+ 
 .logo {
     width: 311px;
     height: 63px;
@@ -23,7 +332,7 @@
     padding: 30px; 
     margin-left: 50px;
 }
-
+ 
 .header {
     display: flex;
     justify-content: space-between;
@@ -35,7 +344,7 @@
     flex-wrap: wrap;
     
 }
-
+ 
 menu {
     display: flex;
     color:#fff;
@@ -45,7 +354,7 @@ menu {
     padding: 30px;
     margin-right: 30px;
 }
-
+ 
 li { 
     display:flex;  
     color:#fff;
@@ -56,7 +365,7 @@ li {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
-
+ 
 main{
     font-size: 70px;
     font-family: 'Fredoka One';
@@ -92,149 +401,14 @@ main{
     text-align: center;
    
 }  
-
+ 
  .botonComprar:hover{
     background:rgb(174, 0, 255);
 }
-
-    /* responsive para iphone 6/7/8 plus, se debe copiar cada elemento que quieres hacer que cambie al momento de achicar la pantalla a estas medidas  */
-
-@media (max-width: 414px) and (max-height: 736px) { 
-
-    .contenedorPrincipal{
-        flex-wrap: wrap;
-        flex-direction: column;
-        background-image: url(img/lugia.jpg);
-        display: flex;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        height: 100vh;
-        
-    }
-    
-
-    .header {
-        display: flex;
-        background-color: #242038;
-        font-family: "open sans";
-        box-shadow: #a7b6c6;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        height: 159px;
-        width: 414px;
-        align-content: center;
-        
-    }
-    
-    .logo {
-        width: 278px;
-        height: 68px;
-    }
-
-    menu {
-        display: none;
-      
-    }
-    
-    li { 
-        display: none;  
-       
-        
-    }
-    
-    main{
-        
-        font-size: 50px;
-        font-family: 'Fredoka One';
-        font-weight: bold;
-        color: ivory;
-        text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
-        padding-top: 25%;
-        padding-right: 24px;
-        text-align: right;
-        letter-spacing: 2pt;
-        flex-direction: column;
-        align-content: flex-end;
-        align-items: flex-end;
-        margin-right: 28px;
-    }
-    
-    .botonComprar{
-        cursor: pointer;
-        width: 200px;
-        height: 51px;
-        background: #FF5376;
-        border-radius: 30px;
-        font-size: 24px;
-        font: "Open Sans";
-        font-style: normal;
-        font-weight: bold;
-        text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
-        color: ivory;
-        box-shadow: 0 1rem 1.25rem 0 rgb(22 75 195 / 50%), 0 -0.25rem 1.5rem rgb(110 15 155) inset, 0 0.75rem 0.5rem rgb(255 255 255 / 40%) inset, 0 0.25rem 0.5rem 0 rgb(180 70 207) inset;
-        border: 1px solid #2b609a;
-      
-        align-items: flex-start;
-        text-align: center;
-        margin-top: 8%;
-    }  
-    
-     .botonComprar:hover{
-        background:rgb(174, 0, 255);
-    }
-    
-  
-}
-
-.memoryGame{
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-
- .card{
-    display: flex;
-    background: #FFFFFF;
-    border: 2px solid #017C76;
-    box-sizing: border-box;
-    box-shadow: 0px 1px 11px 0px #48faf1;
-    border-radius: 10px;
-    margin: 30px;
-    width: 130px;
-    height: 150px;
-    padding: 15px;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-around;
-}
-
-
-.card.is-flipped {
-    transform: rotateY(180deg);
-}
-
-
-.classFrente{
-  
+ 
    
-    background-color: white;
-    border: 2px solid red;
-    height: 200px;
-    width: 200px;
-}
-
-
-.imagenPokemon{
-    
-    transform: rotateY(180deg);
-    display: block;
-   
-}
+ 
+ 
 .contenedor{
     background-image: url(./img/backqueue.jpg);
     display: flex;
@@ -247,7 +421,7 @@ main{
     justify-content: center;
     flex-wrap:wrap;
 }
-
+ 
 .containerBox{
     width: 960px;
     height: 640px;
@@ -261,7 +435,7 @@ main{
     justify-content:center;
     align-items: center;    
 }
-
+ 
 h1{
     font-family: Open Sans;
     font-style: normal;
@@ -275,7 +449,7 @@ h1{
     font-weight: bold;
     color:#fff;
     margin-top: initial;
-
+ 
 }
 h2{
     font-family: Fredoka One;
@@ -289,13 +463,13 @@ h2{
     }
     
 h3{
-        font-family: Open Sans;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        color:#fff;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color:#fff;
     }
-
+ 
 p{
     font-family: Open Sans;
     font-style: normal;
@@ -309,7 +483,7 @@ p{
     margin-inline-start: 0;
     margin-inline-end: 0;
 }
-
+ 
 .contador{
     background: #ffffff;
     vertical-align: inherit;
@@ -320,7 +494,7 @@ p{
     height: 2em;
     line-height: 35px;
 }
-
+ 
 .btn{
 font-family: Open Sans;
 font-style: normal;
@@ -330,7 +504,7 @@ line-height: 40px;
 color: #fff;
 margin: 10px;
 }
-
+ 
 .juegaAqui{
     width: 200px;
     height: 50px;
@@ -340,7 +514,7 @@ margin: 10px;
     text-shadow:  0px 4px 3px rgba(0,0,0,0.4),
                   0px 8px 13px rgba(0,0,0,0.1),
                   0px 18px 23px rgba(0,0,0,0.1);
-    color: ivory;
+    color:#fff;
     box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
                   0 -0.25rem 1.5rem rgba(110, 15, 155, 1) inset,
                   0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
@@ -352,9 +526,9 @@ margin: 10px;
     font-weight: bold;
   }
   .juegaAqui:hover{
-      background-color: aqua;
+      background-color: rgb(108, 21, 134);
   }
-
+ 
  .redirection{
     font-family: Open Sans;
     font-style: normal;
@@ -368,35 +542,94 @@ margin: 10px;
     color: #FF5376;
     text-shadow: 0px 4px 4px #000000;
  } 
-
+ 
  #pagFinal{
      display: hidden;
  }
-
-
-.containerBox1{
-    width: 960px;
-    height: 640px;
-    background: rgba(0, 0, 0, 0.44);
-    border: 5px solid #017C76;
-    box-sizing: border-box;
-    border-radius: 20px;  
-    text-align: center;
+ 
+ @media (max-width: 414px) and (max-height: 736px) { 
+ 
+.contenedorPrincipal{
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-image: url(img/lugia.jpg);
     display: flex;
-    flex-direction: column; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+        
+    }
     
-    align-items: center; 
-    justify-content: flex-start;      
+.header {
+    display: flex;
+    background-color: #242038;
+    font-family: "open sans";
+    box-shadow: #a7b6c6;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 159px;
+    width: 414px;
+    align-content: center;
+        
+    }
+    
+.logo {
+    width: 278px;
+    height: 68px;
 }
-
- .nivel1{
-    font-family: Open Sans;
+ 
+menu {
+    display: none;
+      
+}
+    
+ li { 
+    display: none;        
+        
+}
+    
+main{
+        
+    font-size: 50px;
+    font-family: 'Fredoka One';
+    font-weight: bold;
+    color: ivory;
+    text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+    padding-top: 25%;
+    padding-right: 24px;
+    text-align: right;
+    letter-spacing: 2pt;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+    margin-right: 28px;
+    }
+    
+.botonComprar{
+    cursor: pointer;
+    width: 200px;
+    height: 51px;
+    background: #FF5376;
+    border-radius: 30px;
+    font-size: 24px;
+    font: "Open Sans";
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
-    color:#fff;
-    padding: 20px;
- }
- .gameContainer{
-     display: grid;
- }
+    text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+    color: ivory;
+    box-shadow: 0 1rem 1.25rem 0 rgb(22 75 195 / 50%), 0 -0.25rem 1.5rem rgb(110 15 155) inset, 0 0.75rem 0.5rem rgb(255 255 255 / 40%) inset, 0 0.25rem 0.5rem 0 rgb(180 70 207) inset;
+    border: 1px solid #2b609a;   
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 8%;
+ 
+}  
+    
+.botonComprar:hover{
+    background:rgb(174, 0, 255);
+    }
+    
+}
