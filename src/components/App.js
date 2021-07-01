@@ -131,7 +131,7 @@ secondPage.appendChild(divHeader);
 
               if (cardsFound == 9) {
 
-// CREAMOS UNA VENTANA EN LA SEGUNDA PÁGINA 
+// CREAMOS UNA VENTANA EN LA SEGUNDA PÁGINA PARA ESPECIFICAR EL NIVEL
 let divWinner = document.createElement('div');
 divWinner.className= 'containerWinnerMessage';
 let imgWinner = document.createElement("img");

@@ -8,7 +8,8 @@
 * [Prototipos y Diagrama de flujo](#Prototipos-de-baja-y-alta-fidelidad)
 * [Test de Usabilidad](#Test-de-usabilidad)
 ***
-Developers: Vania Villegas-Viviana Moya.
+Developers: Vania Venegas-Viviana Moya.
+Link del juego: 
 ***
 
 ## Preámbulo
