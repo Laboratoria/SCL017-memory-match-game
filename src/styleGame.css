@@ -134,29 +134,23 @@
 }
 
 .nextLevel {
-  cursor: pointer;
-  margin: -230px;
-  width: 264px;
-  height: 65px;
-  left: 534px;
-  top: 485px;
-  background: #017c76;
-  box-shadow: 0 1rem 17rem 2px rgb(22 145 195 / 24%),
-    0px 0rem 0rem 0px rgb(15 155 60) inset,
-    0 0.75rem 1rem rgb(255 255 255 / 40%) inset,
-    0 0.25rem 1rem 3px rgb(70 207 127) inset;
-  border-radius: 30px;
-  font-family: Open Sans;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: -0.02em;
-  color: #ffffff;
-  text-shadow: 0px 4px 4px rgb(0 0 0 / 19%);
-  justify-content: center;
+cursor: pointer;
+margin: -181px;
+width: 264px;
+height: 66px;
+background: #017c76;
+box-shadow: 0 1rem 17rem 2px rgb(22 145 195 / 24%), 0px 0rem 0rem 0px rgb(15 155 60) inset, 0 0.75rem 1rem rgb(255 255 255 / 40%) inset, 0 0.25rem 1rem 3px rgb(70 207 127) inset;
+border-radius: 30px;
+font-family: Open Sans;
+font-weight: bold;
+font-size: 25px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.02em;
+color: #ffffff;
+text-shadow: 0px 4px 4px rgb(0 0 0 / 19%);
+    justify-content: center;
 }
 .modal-bg {
   position: fixed;
@@ -180,7 +174,7 @@ modal {
   font-size: 65px;
   color: rgba(221, 203, 5, 0.858);
   text-shadow: 0px 4px 4px rgb(0 0 0 / 19%);
-  padding-block: 10%;
+  padding-block: 6%;
 }
 
 /* disponible para iphone 6/7/8+ */
