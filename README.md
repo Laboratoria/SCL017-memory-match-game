@@ -42,7 +42,7 @@ gracias a esta investigación nacieron nuestras Historias de Usuario.
 
   ## Historias de usuarios
 
-  ![HISTORIAS DE USUARIO](../master/src/images/HU.jpg)
+  ![HISTORIAS DE USUARIO](https://github.com/ViviMoya/SCL017-memory-match-game/blob/master/src/images/HU.jpg)
 
 MemoPlay, aunque está diseñado idealmente puede ser usado como una herramienta de apoyo para que un Adulto (padre, docente u otro) pueda ayudar a un niño con TEA en el entendimiento y gestión de las emociones, puede ser usado por cualquier persona de cualquier edad. 
 
