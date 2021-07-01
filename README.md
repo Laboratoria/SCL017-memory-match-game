@@ -9,7 +9,9 @@
 * [Test de Usabilidad](#Test-de-usabilidad)
 ***
 Developers: Vania Venegas-Viviana Moya.
-Link del juego: 
+***
+***
+Link del juego:  [MemoPlay]( https://vivimoya.github.io/SCL017-memory-match-game/src)
 ***
 
 ## Preámbulo
