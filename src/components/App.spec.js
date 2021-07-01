@@ -1,5 +1,5 @@
 import App from './App.js';
-// import {shuffle} from './App.js';
+import {shuffle} from './App.js';
 
 describe('App', () => {
   it('should render without crashing', () => {
@@ -10,3 +10,9 @@ describe('App', () => {
     expect(typeof App).toBe("function");
   });
 });
+
+describe("shuffle", () =>{
+  it("should be a function", () =>{
+    expect(typeof shuffle).toEqual("function");
+  })
+})

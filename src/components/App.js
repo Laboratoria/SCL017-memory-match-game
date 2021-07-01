@@ -38,7 +38,7 @@ gameContainer.className = ("containerBox1");
 gameContainer.id = ("gameContainer");
  
 const level1 = document.createElement("div");
-const textLevel1 = document.createTextNode("Nivel 1");
+const textLevel1 = document.createTextNode("NIVEL 1");
 level1.className = ("nivel1");
 level1.id = ("nivel1");
  
@@ -49,14 +49,13 @@ memoryGame.id = ("memoryGame");
 const nextLevel = document.createElement("button");
 nextLevel.style.display = ("none");
 const textNextLevel = document.createTextNode ("SIGUIENTE NIVEL");
-nextLevel.className = ("nextLevelText");
+nextLevel.className = ("nextLevel");
 nextLevel.id = ("nextLevel");
 
 // con este evento pasamos de nivel 1 a 2
 nextLevel.addEventListener("click", ()=> {
-  document.getElementById("root2").style.display=("flex");
   document.getElementById("gameBoard2").style.display=("flex");
-  document.getElementById("root").style.display=("none");
+  document.getElementById("gameBoard").style.display=("none");
 }); 
  
 // funcionamiento del juego
@@ -108,7 +107,6 @@ const App = () => {
   gameContainer.appendChild(level1);
   level1.appendChild(textLevel1);
   gameContainer.appendChild(memoryGame);
-  gameBoard.appendChild(gameContainer);
   gameContainer.appendChild(nextLevel);
   nextLevel.appendChild(textNextLevel);
   memoryGame.appendChild(card);

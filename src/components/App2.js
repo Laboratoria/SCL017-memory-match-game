@@ -15,7 +15,7 @@ function match (cartasEscogidas,cards) {
       cards[index].style.visibility = "hidden";        
       }
       if(paresEncontrados === 6){
-        document.getElementById("nextLevel3").style.display = "block";
+        document.getElementById("nextLevel2").style.display = "block";
        }
     }
       cartasEscogidas.length = 0;
@@ -36,27 +36,28 @@ gameBoard2.style.display = ("none");
  
 const gameContainer = document.createElement("div"); // Aquí creamos el elemento que va a contener el juego y que será hijo del elemento anterior
 gameContainer.className = ("containerBox1");
-gameContainer.id = ("gameContainer");
+gameContainer.id = ("gameContainer2");
  
  
 const level1 = document.createElement("div");
-const textLevel1 = document.createTextNode("Nivel 2");
+const textLevel1 = document.createTextNode("NIVEL 2");
 level1.className = ("nivel1");
 level1.id = ("nivel1");
  
 const memoryGame = document.createElement("div"); 
-memoryGame.className = ("memoryGame");
+memoryGame.className = ("memoryGame2");
 memoryGame.id = ("memoryGame");
  
 const nextLevel = document.createElement("button");
 nextLevel.style.display = ("none");
 const textNextLevel = document.createTextNode ("¡SIGUIENTE NIVEL!")
-nextLevel.className = ("nextLevelText");
+nextLevel.className = ("nextLevel");
 nextLevel.id = ("nextLevel2");
 
 nextLevel.addEventListener("click", ()=> {
   document.getElementById("gameBoard3").style.display=("flex");
-  }); 
+  document.getElementById("gameBoard2").style.display=("none");
+}); 
  
 // funcionamiento del juego 
 let listaPokemon = pokemon.items; // esto lo del for ya recorrido
@@ -70,11 +71,11 @@ let paresEncontrados = 0;
 const App2 = () => {
   for (let index = 0; index < listaPokemon.length; index++) {
     let card = document.createElement ("div");
-    card.className = ("card");
+    card.className = ("card2");
     card.id = listaPokemon.id;
     let imagenFrontal = document.createElement ("img"); 
     imagenFrontal.src = "../img/QUEUE.png";
-    imagenFrontal.className ="imagenFrontal";
+    imagenFrontal.className ="imagenFrontal2";
   
     card.appendChild(imagenFrontal);
     
@@ -91,11 +92,11 @@ const App2 = () => {
       match(cartasEscogidas,cards)
       let reemplazoOne = cards[0].lastChild;
     reemplazoOne.src = "../img/QUEUE.png";
-    reemplazoOne.className = "imagenFrontal";
+    reemplazoOne.className = "imagenFrontal2";
 
     let reemplazoTwo = cards[1].lastChild;
     reemplazoTwo.src = "../img/QUEUE.png";
-    reemplazoTwo.className = "imagenFrontal";
+    reemplazoTwo.className = "imagenFrontal2";
     cards.length = 0;
     },1000);
     } 
@@ -108,7 +109,6 @@ const App2 = () => {
   gameContainer.appendChild(level1);
   level1.appendChild(textLevel1);
   gameContainer.appendChild(memoryGame);
-  gameBoard2.appendChild(gameContainer);
   gameContainer.appendChild(nextLevel);
   nextLevel.appendChild(textNextLevel);
 }  

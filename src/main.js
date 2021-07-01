@@ -20,8 +20,8 @@ document.getElementById("juegaAqui").onclick=function(){
 
 
 document.getElementById('root').appendChild(App());
-document.getElementById('root2').appendChild(App2());
-document.getElementById('root3').appendChild(App3());
+document.getElementById('root').appendChild(App2());
+document.getElementById('root').appendChild(App3());
 
 
 
