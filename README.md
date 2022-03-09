@@ -1,387 +1,189 @@
-# Memory Match Game
+# MAKKURO MEMO
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
+* [Makkuro Memo](#makkuro-memo)
+* [Instrucciones de uso](#instrucciones-de-uso)
+* [Interfaz](#interfaz)
+* [Prototipos](#prototipos)
+* [Historias de usuario](#historias-de-usuario)
+* [Test de usabilidad](#test-de-usabilidad)
+* [Enlace](#enlace)
 
-***
+## Makkuro Memo
+Makkuro Memo es un juego memorice web inspirado en cuatro películas de animación japonesa de la productora Studio Ghibli, específicamente aquellas creadas por Hayao Miyazaki: El castillo ambulante, Mi vecino Totoro, El viaje de Chihiro y La princesa Mononoke. El nombre del memorice hace honor a Makkuro kurosuke, también conocidos como Susuwataru, personajes recurrentes en el mundo de Miyazaki.
+Está dirigido a un público infanto-juvenil, pero con un único nivel de dificultad que genere un desafío para sus jugadores: un puntaje, un límite de intentos fallidos y un timer.
 
-## 1. Preámbulo
 
-El juego [_Memory Match_](https://en.wikipedia.org/wiki/Concentration_(card_game)),
-también conocido como _Concentration_, _Match Match_, _Match Up_, _Memory_,
-entre otros, es un juego de cartas en el que todas las cartas se ponen cara
-abajo sobre una superficie y se le dan la vuelta a dos cartas en cada turno. El
-objetivo del juego es destapar parejas de cartas que coincidan.
+## Instrucciones de uso
+Para jugar Makkuro Memo:
+1. Hacer clic en botón "jugar"
+2. Elegir categoría (set de cartas) que se desea jugar.
+3. Las cartas estarán boca abajo, por lo que se deberán destapar dos para poder hacer el primer intento de match (emparejar cartas).
+4. Cuando comience el juego, también iniciará un contador regresivo y un conteo de giros fallidos, por lo que se perderá si el contador llega a 0 antes de hacer todos los matches o si se llega al límite de giros fallidos permitidos (10).
+5. En caso contrario, si se logra hacer todos los matches a tiempo y dentro del límite de giros, el jugador ganará.
+6. El puntaje que el jugador reciba dependerá de en cuántos intentos logró hacer todos los matches. El puntaje máximo (ningún error) es de 100. Por cada intento fallido, se descuentan 10 puntos.
+7. Al ganar o perder aparecerá un botón de reiniciar que llevará nuevamente a la pantalla de categorías y que permitirá volver a jugar una partida.
 
-![Concentration (card game)](https://upload.wikimedia.org/wikipedia/commons/4/4d/WMCZ_Protected_Areas_Card_Game-7_%28cropped%29.jpg)
+## Interfaz
 
-Ejemplos:
+### En desktop
 
-* [Santa Tracker de Google](https://santatracker.google.com/matching.html)
-* [Match The Memory](https://matchthememory.com/play)
+![desktop1](https://user-images.githubusercontent.com/83680798/123003812-bec8ba80-d381-11eb-83cf-0b52659d49f2.png)
 
-## 2. Resumen del proyecto
+<details>
+<summary> Clic para ver las siguientes pantallas del juego </summary>
+  
+> ![desktop2](https://user-images.githubusercontent.com/83680798/123003815-bff9e780-d381-11eb-9202-9ae32c4c8a81.png)
+  
+> ![desktop3](https://user-images.githubusercontent.com/83680798/123003820-c1c3ab00-d381-11eb-8bdc-00795cc693e5.png)
+  
+> ![desktop4](https://user-images.githubusercontent.com/83680798/123003823-c25c4180-d381-11eb-9872-1b8cc2a78a29.png)
+</details>
+<br>
 
-En este proyecto construirás una versión _web_ del juego _Memory Match_, en la
-que una jugadora pueda jugar sola, en el navegador.
+### En iPhone 7
 
-## 3. Objetivos de aprendizaje
+<img src="https://user-images.githubusercontent.com/83680798/123159755-60601280-d43b-11eb-8068-cd143a95b5c3.PNG" width="200" height="356" />
 
-El objetivo principal de este proyecto es que aprendas a diseñar y construir una
-interfaz web basada en data e interacción con la usuaria.
 
-### HTML y CSS
 
-* [ ] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] Uso de selectores de CSS.
-* [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
-* [ ] [Uso de flexbox en CSS.](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+## Prototipos
 
-### DOM y Web APIs
+### 1. Prototipos baja fidelidad:
 
-* [ ] Uso de selectores del DOM.
-* [ ] Manejo de eventos del DOM.
-* [ ] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
-(appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
 
-### JavaScript
 
-* [ ] Uso de condicionales (if-else | switch | operador ternario)
-* [ ] Uso de bucles (for | for..in | for..of | while)
-* [ ] Uso de funciones (parámetros | argumentos | valor de retorno)
-* [ ] Manipular arrays (filter | map | sort | reduce)
-* [ ] Manipular objects (key | value)
-* [ ] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
-| [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
-* [ ] Diferenciar entre expression y statements.
-* [ ] Diferenciar entre tipos de datos atómicos y estructurados.
+<details>
+<summary> Clic para ver </summary>
 
-### Testing
+> ![Prototipo 1](src/readme-images/lowresprototype1.jpg)
 
-* [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
+> ![Prototipo 2](src/readme-images/lowresprototype2.jpg)
+</details>
+<br>
 
-### Estructura del código y guía de estilo
+### 2. Prototipo alta fidelidad:
+#### - Desktop
+![MacBook Pro - 1](https://user-images.githubusercontent.com/83680798/122806725-adf04a00-d298-11eb-86c8-d2d61cd876eb.png)
 
-* [ ] Organizar y dividir el código en módulos (Modularización)
-* [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
-* [ ] Uso de linter (ESLINT)
+---
 
-### Git y GitHub
+#### - iPad
+![iPadgold](https://user-images.githubusercontent.com/83680798/122807731-efcdc000-d299-11eb-8a4c-fd177f8d7a0d.png)
 
-* [ ] Uso de comandos de git (add | commit | pull | status | push)
-* [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
-* [ ] Colaboración en Github (branches | pull requests | |tags)
+## Historias de usuario
 
-### UX
+### 1. "Quiero un juego simple, que no necesite registrarse".
+```
+CRITERIOS DE ACEPTACIÓN:
+- Sin input.
+- Solo un botón de clic que inmediatamente lleva al juego.
+- Cartas inmediatamente desplegadas luego del clic.
+- Cartas deben estar al azar.
 
-* [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-* [ ] Crear prototipos para obtener feedback e iterar.
-* [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
-* [ ] Planear y ejecutar tests de usabilidad.
+DEFINICIÓN DE TERMINADO
+- Botón jugar implementado.
+- Cartas barajadas al azar con función shuffle.
+- Clic debe reconocer ID de elementos y guardar la información.
+- Se deben mostrar las cartas boca arriba al hacer clic.
+- Se implementa un efecto flip.
 
-## 4. Consideraciones generales
+```
+### 2. "Me gustaría poder jugar en celular".
+```
+CRITERIOS DE ACEPTACIÓN:
+- Debe ser responsivo.
+- Se debe ver igual en pc de escritorio y notebook de la dupla.
 
-* Este proyecto se debe resolver en duplas.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
 
-## 5. Criterios de aceptación mínimos del proyecto
+DEFINICIÓN DE TERMINADO
+- Está implementado media query en iPhone 6, 7, 8, X, Galaxy S5, iPad, Kindle Fire HDX y notebook con resolución pequeña.
+- Se crea un CSS aparte para media query.
+- Se quita el background de la grilla original en móviles.
+- El header sube en móviles.
+```
+### 3. "Me gustaría reconocer si las cartas que elegí son pares o no".
+```
+CRITERIOS DE ACEPTACIÓN:
+- Cartas deben hacer match.
+- Al hacer match las cartas se deben destacar de alguna forma.
+- Si no hay match, las cartas giran boca abajo.
 
-Los criterios para considerar que has completado este proyecto son:
 
-### Definición del producto
-
-Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
-contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
-el problema (o problemas) que tiene tu usuario.
-
-### Historias de usuario
-
-Una vez que entiendas las necesidades de tus usuarios, escribe las [Historias
-de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
-todo lo que el usuario necesita hacer/ver. Las **Historias de Usuario** deben
-ser el resultado de tu proceso de investigación o _research_ de tus usuarios.
-
-Asegúrate de incluir la definición de terminado (_definition of done_) y los
-Criterios de Aceptación para cada una.
-
-En la medida de lo posible, termina una historia de usuario antes de pasar
-a la siguiente (Cumple con Definición de Terminado + Criterios de Aceptación).
-
-### Diseño de la Interfaz de Usuario
-
-#### Prototipo de baja fidelidad
-
-Durante tu trabajo deberás haber hecho e iterado bocetos (_sketches_) de tu
-solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
-iteraciones que hagas, que las subas a tu repositorio y las menciones en tu
-`README.md`.
-
-#### Prototipo de alta fidelidad
-
-Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
-_User Interface_). Para eso debes aprender a utilizar alguna herramienta de
-diseño visual. Nosotros te recomendamos [Figma](https://www.figma.com/) que es
-una herramienta que funciona en el navegador y, además, puedes crear una cuenta
-gratis. Sin embargo, eres libre de utilizar otros editores gráficos como
-Illustrator, Photoshop, PowerPoint, Keynote, etc.
-
-El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
-desearías implementar si tuvieras tiempo ilimitado para trabajar. Además, tu
-diseño debe seguir los fundamentos de _visual design_.
-
-#### Testeos de usabilidad
-
-Durante el reto deberás hacer _tests_ de usabilidad con distintos usuarios, y
-en base a los resultados, deberás iterar tus diseños. Cuéntanos
-qué problemas de usabilidad detectaste a través de los _tests_ y cómo los
-mejoraste en tu propuesta final.
-
-### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
-
-Luego de diseñar tu interfaz de usuario deberás trabajar en su implementación.
-**No** es necesario que construyas la interfaz exactamente como la diseñaste.
-Tu tiempo de hacking es escaso, así que deberás priorizar
-
-Como mínimo, tu implementación debe:
-
-1. Dado un set de cartas, barajar las cartas y mostrarlas en la interfaz.
-2. Permitir al usuario _destapar_ las cartas de 2 en 2.
-3. Dejar destapadas las cartas que coincidan al destaparlas.
-4. Indicar al usuario que ganó cuando haya destapado todas las cartas.
-5. Ser _responsive_, es decir, debe visualizarse sin problemas desde distintos
-   tamaños de pantallas: móviles, tablets y desktops.
-6. Que la interfaz siga los fundamentos de _visual design_.
-
-### Pruebas unitarias
-
-El _boilerplate_ de este proyecto incluye
-[pruebas unitarias (_unit tests_) de un componente como ejemplo](./src/components/App.spec.js).
-A medida que vayas agregando componentes tendrás que ir agregando pruebas para
-mantener buena _cobertura_.
-
-Tus _pruebas unitarias_ deben tener una cobertura del 70% de _statements_
-(_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y _branches_
-(_ramas_) de tus componentes.
-
-## 6. Hacker edition
-
-Las secciones llamadas _Hacker Edition_ son **opcionales**. Si **terminaste**
-con todo lo anterior y te queda tiempo, intenta completarlas. Así podrás
-profundizar y/o ejercitar más sobre los objetivos de aprendizaje del proyecto.
-
-Features/características extra sugeridas:
-
-* En lugar de consumir la data estática brindada en este repositorio, puedes
-  consumir la data de forma dinámica, cargando un archivo JSON por medio de
-  `fetch`. La carpeta `src/data` contiene una versión `.js` y una `.json` de
-  de cada set datos.
-* Agregar nuevos sets de cartas.
-* Calcular puntuación basado en número de turnos.
-* Agregar timer y tener cuenta en puntuación.
-* 100% Coverage
-
-## 7. Consideraciones técnicas
-
-La lógica del proyecto debe estar implementada completamente en JavaScript,
-HTML y CSS. En este proyecto NO está permitido usar librerías o frameworks, solo
-[vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e).
-
-No se debe utilizar la _pseudo-variable_ `this`.
-
-Para iniciar un nuevo juego, siempre tendremos que _barajar_ las cartas antes de
-pintarlas en la pantalla. Para eso, te invitamos a que explores algoritmos
-existentes para este tipo de operación (llamada _shuffle_ en inglés), como por
-ejemplo el [_algoritmo de Fisher-Yates (aka Knuth)_](https://es.wikipedia.org/wiki/Algoritmo_de_Fisher-Yates).
-
-En este proyecto no se espera que _inventes_ o implementes tu propio algoritmo
-para barajar las cartas, si no que _googlees_, veas opciones existentes,
-consideres opciones y adaptes una a tu proyecto (agregando una función `shuffle`
-que se pueda usar en tu aplicación).
-
-El _boilerplate_ contiene una estructura de archivos como punto de partida así
-como toda la configuración de dependencias:
-
-```text
-.
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── package.json
-├── README.md
-└── src
-    ├── components
-    │   ├── App.js
-    │   └── App.spec.js
-    ├── data
-    │   ├── pokemon
-    │   │   ├── pokemon.js
-    │   │   └── pokemon.json
-    │   ├── README.md
-    │   └── webdev
-    │       ├── webdev.js
-    │       └── webdev.json
-    ├── index.html
-    ├── main.js
-    └── style.css
+DEFINICIÓN DE TERMINADO
+- Función de match implementada.
+- Se corrigen errores y se limita el hacer más de los clics correspondientes.
+- Se diseña una respuesta evidente al hacer match.
 ```
 
-### `src/index.html`
+### 4. "Quiero saber si gané".
 
-Como en el proyecto anterior, existe un archivo `index.html`. Como ya sabes,
-acá va la página que se mostrará al usuario. También nos sirve para indicar
-qué scripts se usarán y unir todo lo que hemos hecho.
+```
+CRITERIOS DE ACEPTACIÓN:
+- Debe haber una pantalla de resultados luego de perder o ganar.
+- Pantalla debe indicar puntaje.
 
-### `src/main.js`
 
-Recomendamos usar `src/main.js` como punto de entrada de tu aplicación. El
-_boilerplate_ incluye este archivo para _conectar_ o _montar_ el _componente_
-`App` en el DOM. De esta forma podremos hacer pruebas unitarias de nuestros
-componentes sin necesidad de que estén conectados a un DOM global.
+DEFINICIÓN DE TERMINADO
+- Dos funciones nuevas: una que indica cuando se ganó y otra cuando se perdió.
+- Se agrega un nuevo módulo llamado ScoreDisplay.
+- Se agrega una nueva pantalla de resultados que bloquea la grilla de cartas.
+- En pantalla debe indicarse el puntaje obtenido al ganar.
+```
+### 5. "Quisiera poder volver a jugar".
 
-Esta no es la única forma de dividir tu código, puedes usar más archivos y
-carpetas, siempre y cuando la estructura sea clara para tus compañeras.
+```
+CRITERIOS DE ACEPTACIÓN:
+- En pantalla de resultados debe haber un botón que reinicie el juego.
 
-### `src/components/App.js`
+DEFINICIÓN DE TERMINADO
+- Se agrega botón de volver a jugar en pantalla de resultados (al ganar y al perder).
+- Botón debe indicar el llamado a la función de Categories.
+```
 
-Este archivo contiene un _componente_ de ejemplo que muestra cómo podemos
-representar un _componente_ como una función que retorna un `HTMLElement`. A la
-hora de construir interfaces es útil pensar en términos de _componentes_ o
-_vistas_ que podemos ir anidando unas dentro de otras. Te invitamos a que
-pienses qué _componentes_ o _cajitas_ necesitas para construir tu aplicación y
-que vayas agregando _componentes_ en el directorio `components` para implementar
-cada uno de ellos. Aunque, otra vez, la forma de organizar tu archivos depende
-al final de tí y de tu equipo. Hay muchas formas de hacerlo, y el _boilerplate_
-es solo una sugerencia 🙊.
+### 6. "Necesito un juego desafiante".
 
-### `src/components/App.spec.js`
+```
+CRITERIOS DE ACEPTACIÓN:
+- Indicador de giros (intentos fallidos) y timer regresivo.
 
-Este archivo muestra cómo podemos crear archivos con _especificaciones_
-(expresadas como pruebas unitarias) de nuestros componentes.
+DEFINICIÓN DE TERMINADO
+- Se agregan dos nuevos elementos que indican los intentos fallidos y el temporizador.
+- Se crea un nuevo módulo timer.
+```
 
-### `src/data`
+### 7. "Quisiera poder jugar con diferentes cartas".
 
-En esta carpeta hay data con sets de cartas de ejemplo que puedes usar en tu
-aplicación, así como información sobre cómo agregar tus propios sets.
-Encontrarás una carpeta por cada set, y dentro de cada carpeta dos archivos: uno
-con la extensión `.js` y otro `.json`. Ambos archivos contienen la misma data;
-la diferencia es que el `.js` lo usaremos a través de un `import`, mientras que
-el `.json` está ahí para opcionalmente cargar la data de forma asíncrona con
-[`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Fetch_API).
+```
+CRITERIOS DE ACEPTACIÓN:
+- Deben implementarse cuatro categorías de cartas de películas de Studio Ghibli.
 
-## 8. Pistas, tips y lecturas complementarias
+DEFINICIÓN DE TERMINADO
+- Se crea un nuevo módulo CategoriesDisplay.js.
+- Se implementan set de cartas de cuatro películas: El castillo ambulante, Mi vecino Totoro, El viaje de Chihiro y La princesa Mononoke. 
+- Se modifica la función de play en Intro.js, ahora lleva a CategoriesDisplay.js.
+- Trabajo en Photoshop para crear nuevas cartas.
+- Se carga la data JSON a través de fetch.
+```
 
-### Primeros pasos
 
-Antes de empezar a escribir código, debes definir qué deberá hacer el producto
-en base al conocimiento que puedas obtener de tu usuario. Estas preguntas te
-pueden ayudar:
 
-* ¿Quiénes son los principales usuarios de producto?
-* ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
-* ¿Cuáles son los componentes principales de la interfaz y por qué?
-* ¿Cuándo utilizan o utilizarían el producto?
-* Toda tu investigación previa debe tener como resultado todas las Historias
-  de Usuario de tu proyecto.
-* No hagas los prototipos de alta fidelidad de todas tus Historias. Comienza
-  solamente por los que se necesiten para tu Sprint 1 (semana 1 de trabajo). Más
-  pistas en la guía de organización para el proyecto.
+## Test de usabilidad
 
-Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
+Hacia el final del tercer sprint se realizó un test de usabilidad de nuestro producto: 
 
-1. Una de las integrantes del equipo debe realizar un :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) del repo de tu cohort,
-   tus _coaches_ te compartirán un _link_ a un repo y te darán acceso de lectura
-   en ese repo. La otra integrante del equipo deber hacer un fork **del
-   repositorio de su compañera** y
-   [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1) un `remote`
-   hacia el mismo.
-2. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
-   tu *fork* a tu computadora (copia local).
-3. 📦 Instala las dependencias del proyecto con el comando `npm install`. Esto
-   asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
-4. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
-   pruebas unitarias (unit tests) con el comando `npm test`.
-5. Para ver la interfaz de tu programa en el navegador, usa el comando
-  `npm start` para arrancar el servidor web y dirígete a
-  `http://localhost:5000` en tu navegador.
-6. A codear se ha dicho! :rocket:
+|<sub> EDAD USUARIA 	|<sub>JUGABILIDAD 	|<sub> DIFICULTAD 	|<sub>ASPECTO VISUAL 	|<sub>RESPONSIVO 	|<sub>EXPERIENCIA DE USUARIO	</sub>|
+|---	|---	|---	|---	|---	|---	|
+|<sub>5 AÑOS	|<sub>Intuitiva. Pierde al inicio debido al cronómetro, pero comprende con facilidad qué debe realizar.|   <sub>Alta debido al cronómetro.	| <sub>Lo encuentra bonito. Le gusta que los sets de cartas sean de películas que en su mayoría reconoce.  	|  <sub>Mejora su jugabilidad en móvil. A pesar de la dificultad, comienza a ganarle al cronómetro y pierde poco. Prefiere el celular 	|  <sub>Adictiva. Jugó varias veces sin parar.  	|
+|   <sub>10 AÑOS	|  <sub>La primera vez le cuesta entender qué significa la pantalla de categorías.  	|   <sub>Difícil la primera vez, pues no reconoce de inmediato que un cronómetro está corriendo.	|  <sub>Le gusta mucho. Le llama la atención el contraste de colores y las animaciones.  	|   <sub>Prefiere jugar en celular o en tablet, lo encuentra más sencillo.	|   <sub>Lo disfruta mucho. Juega por casi una hora. Desea ver una de las películas del set de cartas para poder reconocer las figuras que contiene.|
+|<sub>18 AÑOS	|   <sub>Entiende con facilidad qué debe hacer. 	|  <sub>Lo considera desafiante. Le motiva que el contador sea rápido y que haya un límite de intentos. 	|   <sub>Le gustan los colores y las animaciones, pero considera que el cronómetro debiera destacarse más ya que no lo notó al principio	|   <sub>En móvil lo encuentra más fácil y cómodo debido al touch.	|   <sub>Le gustó bastante, con ganas de probarlo varias veces. 	|
 
-### Contenido de referencia
+De acuerdo con la información recabada, se detectan los siguientes aspectos a mejorar:
+- Agregar una instrucción más evidente de qué categoría (set de cartas) se desea jugar.
+- Implementar en CSS una cualidad que destaque el cronómetro al iniciar el juego.
+  
+ ## Enlace
+  
+  https://nikoguerrero.github.io/SCL017-memory-match-game/
 
-#### Diseño de experiencia de usuario (User Experience Design)
-
-* Investigación con usuarios / entrevistas
-* Principios de diseño visual
-
-#### Desarrollo Front-end
-
-* Unidad de testing en curso de JavaScript en LMS.
-* Unidad de arreglos en curso de JavaScript en LMS.
-* Unidad de objetos en curso de JavaScript en LMS.
-* Unidad de funciones en curso de JavaScript en LMS.
-* Unidad de DOM en curso de Browser JavaScript en LMS.
-* [Array en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array)
-* [Array.sort en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/sort)
-* [Array.map en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/map)
-* [Array.filter en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/filter)
-* [Array.reduce en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/reduce)
-* [Array.forEach en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/forEach)
-* [Object.keys en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/keys)
-* [Object.entries en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/entries)
-* [Fetch API en MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-* [json.org](https://json.org/json-es.html)
-* [expressions-vs-statements](https://2ality.com/2012/09/expressions-vs-statements.html)
-* [expresión vs sentencia](https://openclassrooms.com/en/courses/4309531-descubre-las-funciones-en-javascript/5108986-diferencia-entre-expresion-y-sentencia)
-* [datos atómicos vs datos estructurados](https://www.todojs.com/tipos-datos-javascript-es6/)
-* [Modulos: Export](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/export)
-* [Modulos: Import](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/import)
-
-#### Herramientas
-
-* [Git](https://git-scm.com/)
-* [GitHub](https://github.com/)
-* [GitHub Pages](https://pages.github.com/)
-* [Node.js](https://nodejs.org/)
-* [Jest](https://jestjs.io/)
-
-#### Organización del Trabajo
-
-* [Historias de Usuario](https://www.youtube.com/watch?v=ky6wFiF5vMk&t=344s).
-  Ojo que Cris no diferencia _Definición de terminado_ de _Criterios de
-  Aceptación_ y nosotros sí lo haremos. Más detalles en la guía.
-* [Cómo dividir H.U.](https://www.youtube.com/watch?v=Ueq786iZ30I&t=341s)
-* [Guía para Memory Match](https://docs.google.com/presentation/d/e/2PACX-1vQhx9D36NjpH-Daea-ITPUDUzNL8ZiNAprq_7b5PSUrfutk45tEtaOLz2lmd8f54_5jX1hypDM8f8SM/pub?start=false&loop=false&delayms=60000)
-
-## 9. Checklist
-
-* [ ] Usa VanillaJS.
-* [ ] No hace uso de `this`.
-* [ ] Pasa linter (`npm run pretest`)
-* [ ] Pasa tests (`npm test`)
-* [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
-  lines y branches.
-* [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-* [ ] Incluye historias de usuario en `README.md`.
-* [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
-  `README.md`.
-* [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
-  en `README.md`.
-* [ ] Incluye el listado de problemas que detectaste a través de tests de
-  usabilidad en el `README.md`.
-* [ ] UI: Muestra cartas _barajadas_ correctamente.
-* [ ] UI: Permite al usuario _destapar_ las cartas de 2 en 2.
-* [ ] UI: Deja destapadas las cartas que coincidan al destaparlas.
-* [ ] UI: Indica al usuario que ganó cuando sea relevante.
-* [ ] UI: Es _responsive_.
-* [ ] UI: La interfaz sigue los fundamentos de _visual design_.
